@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1º Fórum Municipal de Desenvolvimento Econômico | Paulo Afonso - BA</title>
+    <meta name="description" content="Construindo uma Rede para um Novo Tempo. Participe do 1º Fórum Municipal de Desenvolvimento Econômico de Paulo Afonso, dia 05 de agosto de 2025 na UniRios.">
+    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --azul-primario: #0056b3;
+            --azul-secundario: #003366;
+            --laranja: #ff6b35;
+            --amarelo: #ffc107;
+            --verde: #28a745;
+            --branco: #ffffff;
+            --cinza-claro: #f8f9fa;
+            --cinza-escuro: #343a40;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--cinza-claro);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background-color: var(--branco);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        
+        .logo-text h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2rem;
+            color: var(--azul-primario);
+            margin-bottom: 5px;
+        }
+        
+        .logo-text p {
+            font-size: 0.8rem;
+            color: var(--cinza-escuro);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--azul-secundario);
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--laranja);
+        }
+        
+        .mobile-menu {
+            display: none;
+            font-size: 1.5rem;
+            color: var(--azul-primario);
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 86, 179, 0.8)), url('paulo-afonso-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: var(--branco);
+            padding: 180px 0 100px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--laranja);
+            color: var(--branco);
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: var(--amarelo);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            border: 2px solid var(--branco);
+            margin-left: 15px;
+        }
+        
+        .btn-secondary:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .countdown {
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+        }
+        
+        .countdown-item {
+            margin: 0 15px;
+            text-align: center;
+        }
+        
+        .countdown-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background-color: rgba(255, 255, 255, 0.2);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        
+        .countdown-text {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+        
+        /* Sobre Section */
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            color: var(--azul-secundario);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            background-color: var(--laranja);
+            bottom: -10px;
+            left: 25%;
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-text h3 {
+            color: var(--azul-primario);
+            margin-bottom: 20px;
+        }
+        
+        .about-text p {
+            margin-bottom: 15px;
+        }
+        
+        .about-image {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .download-btn {
+            margin-top: 20px;
+        }
+        
+        /* Eixos Temáticos */
+        .themes-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        
+        .theme-card {
+            background-color: var(--branco);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border-left: 4px solid var(--laranja);
+        }
+        
+        .theme-card h3 {
+            color: var(--azul-secundario);
+            margin-bottom: 15px;
+        }
+        
+        /* Programação */
+        .schedule-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        
+        .tab-btn {
+            padding: 10px 20px;
+            background-color: var(--branco);
+            border: 1px solid var(--azul-primario);
+            color: var(--azul-primario);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .tab-btn:first-child {
+            border-radius: 5px 0 0 5px;
+        }
+        
+        .tab-btn:last-child {
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .tab-btn.active {
+            background-color: var(--azul-primario);
+            color: var(--branco);
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .schedule-item {
+            background-color: var(--branco);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .schedule-time {
+            font-weight: 600;
+            color: var(--laranja);
+            margin-bottom: 10px;
+        }
+        
+        .schedule-title {
+            font-weight: 600;
+            color: var(--azul-secundario);
+            margin-bottom: 5px;
+        }
+        
+        .schedule-speaker {
+            font-style: italic;
+            color: var(--cinza-escuro);
+        }
+        
+        .schedule-location {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: var(--azul-primario);
+        }
+        
+        /* Grupos de Trabalho */
+        .gt-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        
+        .gt-card {
+            background-color: var(--branco);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .gt-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .gt-icon {
+            background-color: var(--azul-primario);
+            color: var(--branco);
+            font-size: 2rem;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .gt-content {
+            padding: 20px;
+        }
+        
+        .gt-content h3 {
+            color: var(--azul-secundario);
+            margin-bottom: 10px;
+        }
+        
+        .gt-content p {
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+        
+        .gt-info {
+            font-size: 0.8rem;
+            color: var(--cinza-escuro);
+            margin-top: 10px;
+        }
+        
+        /* CMDE Section */
+        .cmde-section {
+            background-color: var(--azul-secundario);
+            color: var(--branco);
+            padding: 80px 0;
+        }
+        
+        .cmde-content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+        
+        .cmde-text {
+            flex: 1;
+        }
+        
+        .cmde-text h2 {
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 20px;
+        }
+        
+        .cmde-image {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .cmde-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Turismo Section */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 40px;
+        }
+        
+        .gallery-item {
+            border-radius: 8px;
+            overflow: hidden;
+            height: 200px;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        /* Contato */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .contact-info h3 {
+            color: var(--azul-primario);
+            margin-bottom: 20px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background-color: var(--laranja);
+            color: var(--branco);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+        }
+        
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .contact-form textarea {
+            height: 150px;
+        }
+        
+        .map-container {
+            height: 400px;
+            margin-top: 40px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--azul-secundario);
+            color: var(--branco);
+            padding: 60px 0 20px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-logo img {
+            height: 60px;
+            margin-bottom: 15px;
+        }
+        
+        .footer-links h3 {
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: var(--branco);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--amarelo);
+        }
+        
+        .partners {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .partner-logo {
+            height: 40px;
+            filter: brightness(0) invert(1);
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+        
+        .partner-logo:hover {
+            opacity: 1;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 992px) {
+            .about-content, .cmde-content {
+                flex-direction: column;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .btn-group {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .btn-secondary {
+                margin-left: 0;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background-color: var(--branco);
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .nav-links li {
+                margin: 10px 0;
+            }
+            
+            .mobile-menu {
+                display: block;
+            }
+            
+            .hero {
+                padding: 150px 0 80px;
+            }
+            
+            .countdown-item {
+                margin: 0 8px;
+            }
+            
+            .countdown-number {
+                width: 60px;
+                height: 60px;
+                font-size: 2rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .btn {
+                min-width: 180px;
+                width: 100%;
+                max-width: 260px;
+                white-space: nowrap;
+                text-align: center;
+                font-size: 1.1rem;
+                padding: 14px 0;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        /* Botão flutuante do WhatsApp sempre visível */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: #fff;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 2.5rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s, transform 0.3s;
+            cursor: pointer;
+        }
+        .whatsapp-float:hover {
+            background: #128c7e;
+            transform: scale(1.08);
+            color: #fff;
+            text-decoration: none;
+        }
+
+        @media (max-width: 576px) {
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 2rem;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+
+        /* Ajuste visual para garantir contraste nas listas do CMDE */
+        .cmde-section ul {
+            color: var(--azul-secundario) !important;
+            font-weight: 500;
+        }
+        .cmde-section li {
+            color: var(--azul-secundario) !important;
+            font-weight: 500;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .cmde-section li i {
+            min-width: 22px;
+            font-size: 1.1em;
+        }
+        .cmde-section .section-title h2 {
+            color: var(--branco) !important;
+            background: none !important;
+            padding: 0;
+            font-size: 2.3rem;
+            font-weight: 800;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .cmde-section .section-title h2::after {
+            background-color: var(--laranja);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="logo-forum.png" alt="Logo do Fórum">
+                    <div class="logo-text">
+                        <h1>1º Fórum Municipal</h1>
+                        <p>Desenvolvimento Econômico de Paulo Afonso</p>
+                    </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#eixos">Eixos Temáticos</a></li>
+                    <li><a href="#programacao">Programação</a></li>
+                    <li><a href="#gts">GTs</a></li>
+                    <li><a href="#cmde">CMDE</a></li>
+                    <li><a href="#turismo">Turismo</a></li>
+                    <li><a href="#inscricao" class="btn">Inscreva-se</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Construindo uma Rede para um Novo Tempo</h1>
+            <p>1º Fórum Municipal de Desenvolvimento Econômico de Paulo Afonso</p>
+            <p><strong>05 de agosto de 2025 | UniRios</strong></p>
+            
+            <div class="btn-group">
+                <a href="#inscricao" class="btn">Faça sua inscrição</a>
+                <a href="#programacao" class="btn btn-secondary">Ver Programação</a>
+            </div>
+            
+            <div class="countdown">
+                <div class="countdown-item">
+                    <div class="countdown-number" id="days">00</div>
+                    <div class="countdown-text">Dias</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="hours">00</div>
+                    <div class="countdown-text">Horas</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="minutes">00</div>
+                    <div class="countdown-text">Minutos</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="seconds">00</div>
+                    <div class="countdown-text">Segundos</div>
+                </div>
+            </div>
+            
+            <p class="slogan">"É hora de reconstruir Paulo Afonso com inovação, união e coragem"</p>
+        </div>
+    </section>
+
+    <!-- Sobre o Fórum -->
+    <section class="section" id="sobre">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sobre o Fórum</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Construindo o futuro de Paulo Afonso</h3>
+                    <p>A Prefeitura Municipal de Paulo Afonso, através da Secretaria de Turismo, Indústria e Comércio (SETIC), em parceria com o UniRios, propõe realizar o 1º Fórum Municipal de Desenvolvimento Econômico de Paulo Afonso.</p>
+                    <p>O evento será um marco estratégico para impulsionar o debate, o planejamento e a construção de ações voltadas ao desenvolvimento sustentável, à inovação, à geração de emprego e à criação do Conselho Municipal de Desenvolvimento Econômico (CMDE), órgão colegiado de controle social e proposição de políticas públicas.</p>
+                    <p>O objetivo geral é discutir e consolidar as diretrizes para a construção de uma política decenal de desenvolvimento socioeconômico para Paulo Afonso, mobilizando a sociedade produtiva e criando um legado institucional com diretrizes claras para os próximos 10 anos do município.</p>
+                    <a href="documento-forum.pdf" class="btn download-btn" download>Baixe o Documento do Fórum</a>
+                </div>
+                <div class="about-image">
+                    <img src="sobre-forum.jpg" alt="Sobre o Fórum">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eixos Temáticos -->
+    <section class="section" id="eixos">
+        <div class="container">
+            <div class="section-title">
+                <h2>Eixos Temáticos</h2>
+            </div>
+            
+            <div class="themes-container">
+                <div class="theme-card">
+                    <h3>Potencialidades e Realidades</h3>
+                    <p>Identificar e desenvolver as potencialidades econômicas de Paulo Afonso, transformando sonhos em realidade para construir uma cidade próspera.</p>
+                </div>
+                
+                <div class="theme-card">
+                    <h3>Redução de Desigualdades</h3>
+                    <p>Promover a redução das desigualdades econômicas através do fortalecimento dos meios produtivos locais e da geração de oportunidades.</p>
+                </div>
+                
+                <div class="theme-card">
+                    <h3>Participação Democrática</h3>
+                    <p>Fortalecer o papel dos conselhos e organizações na construção democrática do desenvolvimento econômico sustentável.</p>
+                </div>
+                
+                <div class="theme-card">
+                    <h3>Poder Público como Motor</h3>
+                    <p>Destacar o poder público como agente fundamental na promoção da inovação, sustentabilidade e crescimento econômico equilibrado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programação -->
+    <section class="section" id="programacao">
+        <div class="container">
+            <div class="section-title">
+                <h2>Programação</h2>
+            </div>
+            
+            <div class="schedule-tabs">
+                <button class="tab-btn active" data-tab="day1">05/08 - Terça</button>
+                <button class="tab-btn" data-tab="day2">06/08 - Quarta</button>
+            </div>
+            
+            <div class="tab-content active" id="day1">
+                <div class="schedule-item">
+                    <div class="schedule-time">08:00 às 09:00</div>
+                    <h3 class="schedule-title">Credenciamento (Café recepção)</h3>
+                    <p class="schedule-speaker">Equipe de Organização SETIC (Manu, Geovanna, Icaro, Airla, Carlos)</p>
+                    <div class="schedule-location">Auditórios UNIRIOS</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">09:00 às 09:40</div>
+                    <h3 class="schedule-title">Abertura oficial com autoridades</h3>
+                    <p class="schedule-speaker">Prefeito: Galinho / Reitores Jacson e Sérgio</p>
+                    <div class="schedule-location">Auditórios UNIRIOS</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">09:40 às 11:00</div>
+                    <h3 class="schedule-title">Talk Show / Sorteio de brindes</h3>
+                    <p class="schedule-speaker">Tema: Reconfiguração da Economia Global: Qual o papel do Estado, da Indústria e dos Pequenos Negócios?<br>Secretário: <strong>Messon</strong> (Mediador: <strong>Caio Arruda</strong>)<br>Mesa: Angelo Almeida (Secretário de Desenvolvimento Econômico), Carlos Passos (Presidente da FIEB), Jorge Khoury (Superintendente do Sebrae/BA)</p>
+                    <div class="schedule-location">Auditórios UNIRIOS</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">11:00 às 11:30</div>
+                    <h3 class="schedule-title">Com perguntas coletadas e finalização</h3>
+                    <p class="schedule-speaker">Rodada de Perguntas. Mediador: Caio Arruda</p>
+                    <div class="schedule-location">Auditórios UNIRIOS</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">11:30 às 12:00</div>
+                    <h3 class="schedule-title">Palestra Sobre Desenvolvimento Territorial</h3>
+                    <p class="schedule-speaker">Igor Gavazza - Gerente de Desenvolvimento da Região Norte da Bahia na Desenbahia</p>
+                    <div class="schedule-location">Auditórios UNIRIOS</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">12:00 às 13:30</div>
+                    <h3 class="schedule-title">Almoço</h3>
+                    <p class="schedule-speaker">Cerimonial</p>
+                    <div class="schedule-location">Auditórios UNIRIOS</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">13:30 às 14:00</div>
+                    <h3 class="schedule-title">Dinâmica de Interação e Ativação</h3>
+                    <p class="schedule-speaker">Percusiclando - Gildo Madeira</p>
+                    <div class="schedule-location">Auditórios UNIRIOS</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">14:00 às 14:40</div>
+                    <h3 class="schedule-title">Case de OSC (associativismo)</h3>
+                    <p class="schedule-speaker">Vandalva Presidente do SICOOB / COOPEE</p>
+                    <div class="schedule-location">Auditórios UNIRIOS</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">14:50 às 15:30</div>
+                    <h3 class="schedule-title">Sebrae e a Força das Entidades Locais: O papel das organizações de base no desenvolvimento regional</h3>
+                    <p class="schedule-speaker">Carlos Cointeiro</p>
+                    <div class="schedule-location">Auditórios UNIRIOS</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">15:30 às 16:00</div>
+                    <h3 class="schedule-title">Rodada de Perguntas</h3>
+                    <p class="schedule-speaker">Cerimonial / Público</p>
+                    <div class="schedule-location">Auditórios UNIRIOS</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">16:00 às 16:20</div>
+                    <h3 class="schedule-title">Intervalo de Cafezinho</h3>
+                    <p class="schedule-speaker">Auxiliares de Coord</p>
+                    <div class="schedule-location">Auditórios UNIRIOS</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">16:20 às 17:00</div>
+                    <h3 class="schedule-title">O papel da educação para a formação das lideranças e o desenvolvimento sócio-econômico</h3>
+                    <p class="schedule-speaker">Prof.ª Dr.ª Ana Patrícia Amaral – Coordenadora do curso de Psicologia UNIRIOS</p>
+                    <div class="schedule-location">Auditórios UNIRIOS</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">17:00 às 17:30</div>
+                    <h3 class="schedule-title">FORUM - O ponto de partida do desenvolvimento</h3>
+                    <p class="schedule-speaker">Caio Arruda - Diretor FIEB, CEO Clara Arruda</p>
+                    <div class="schedule-location">Auditórios UNIRIOS</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">17:30 às 18:00</div>
+                    <h3 class="schedule-title">Delas por elas: Onde elas empreendem tudo se transforma</h3>
+                    <p class="schedule-speaker">SEBRAE</p>
+                    <div class="schedule-location">Auditórios UNIRIOS</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">18:00 às 19:00</div>
+                    <h3 class="schedule-title">Pausa</h3>
+                    <p class="schedule-speaker">Responsável</p>
+                    <div class="schedule-location">Auditórios UNIRIOS</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">19:00 às 20:00</div>
+                    <h3 class="schedule-title">Cadeias Produtivas e Arranjos Locais de Desenvolvimento (ALIs)</h3>
+                    <p class="schedule-speaker">Carlos Passos, Presidente da FIEB</p>
+                    <div class="schedule-location">Auditórios UNIRIOS</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">20:00 às 20:15</div>
+                    <h3 class="schedule-title">Rodadas de Perguntas</h3>
+                    <div class="schedule-location">Auditórios UNIRIOS</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">20:15 às 20:25</div>
+                    <h3 class="schedule-title">Coffee Break</h3>
+                    <div class="schedule-location">Auditórios UNIRIOS</div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">20:30 às 21:30</div>
+                    <h3 class="schedule-title">Cidades Empreendedora: o Empreendedorismo como propulsor do desenvolvimento social e econômico.</h3>
+                    <p class="schedule-speaker">Jorge Khoury Superintendente do Sebrae/BA.</p>
+                    <div class="schedule-location">Auditórios UNIRIOS</div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="day2">
+                <div class="schedule-item">
+                    <div class="schedule-time">09:00 às 12:00</div>
+                    <h3 class="schedule-title">Passeio Turístico (City Tour)</h3>
+                    <p class="schedule-speaker">Aproveite para conhecer os principais pontos turísticos de Paulo Afonso.</p>
+                    <div class="schedule-location">Saída: UniRios</div>
+                    <a href="#" class="btn" style="margin-top:15px; display:inline-block;">Inscreva-se para o City Tour</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grupos de Trabalho -->
+    <section class="section" id="gts">
+        <div class="container">
+            <div class="section-title">
+                <h2>Grupos de Trabalho</h2>
+            </div>
+            
+            <div class="gt-grid">
+                <div class="gt-card">
+                    <div class="gt-icon">
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="gt-content">
+                        <h3>Varejo</h3>
+                        <p>Discussão sobre o fortalecimento do comércio local, qualificação de atendimento, digitalização de vendas, vitrines atrativas e ações para aumentar o consumo no centro e nos bairros.</p>
+                        <div class="gt-info"><strong>Data:</strong> 11/11/2025<br><strong>Local:</strong> Auditório Edson Teixeira<br><strong>Horário:</strong> 19h</div>
+                        <a href="https://www.sympla.com.br/evento/grupo-de-trabalho-tema-varejo/3042074?share_id=copiarlink" class="btn">Inscreva-se no GT</a>
+                    </div>
+                </div>
+                
+                <div class="gt-card">
+                    <div class="gt-icon">
+                        <i class="fas fa-theater-masks"></i>
+                    </div>
+                    <div class="gt-content">
+                        <h3>Turismo e Economia Criativa</h3>
+                        <p>Foco em atrativos turísticos, cultura, eventos, artesanato e experiências que valorizem a identidade de Paulo Afonso como destino criativo e sustentável.</p>
+                        <div class="gt-info"><strong>Data:</strong> 04/09/2025<br><strong>Local:</strong> Auditório Edson Teixeira<br><strong>Horário:</strong> 19h</div>
+                        <a href="https://www.sympla.com.br/evento/grupo-de-trabalho-turismo-e-economia-criativa/3045541" class="btn">Inscreva-se no GT</a>
+                    </div>
+                </div>
+                
+                <div class="gt-card">
+                    <div class="gt-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <div class="gt-content">
+                        <h3>Supermercado e Atacado</h3>
+                        <p>Estratégias para logística, abastecimento, negociação com fornecedores, compras coletivas, rede de suprimentos e modernização de processos.</p>
+                        <div class="gt-info"><strong>Data:</strong> 13/11/2025<br><strong>Local:</strong> Auditório Edson Teixeira<br><strong>Horário:</strong> 19h</div>
+                        <a href="https://www.sympla.com.br/evento/grupo-de-trabalho-supermercado-e-atacado/3045564" class="btn">Inscreva-se no GT</a>
+                    </div>
+                </div>
+                
+                <div class="gt-card">
+                    <div class="gt-icon">
+                        <i class="fas fa-tractor"></i>
+                    </div>
+                    <div class="gt-content">
+                        <h3>Agricultura e Desenvolvimento Rural</h3>
+                        <p>Desenvolvimento de soluções para escoamento da produção, apoio técnico, uso de tecnologia no campo, sustentabilidade e acesso a mercados para agricultores.</p>
+                        <div class="gt-info"><strong>Data:</strong> 14/08/2025<br><strong>Local:</strong> Auditório Edson Teixeira<br><strong>Horário:</strong> 19h</div>
+                        <a href="#" class="btn">Inscreva-se no GT</a>
+                    </div>
+                </div>
+                
+                <div class="gt-card">
+                    <div class="gt-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="gt-content">
+                        <h3>Feirantes e Ambulantes</h3>
+                        <p>Melhorias para as feiras livres e comércio ambulante: infraestrutura, regularização, qualificação e incentivo ao microempreendedor urbano.</p>
+                        <div class="gt-info"><strong>Data:</strong> 21/10/2025<br><strong>Local:</strong> Auditório Edson Teixeira<br><strong>Horário:</strong> 19h</div>
+                        <a href="https://www.sympla.com.br/evento/grupo-de-trabalho-feirantes-e-ambulantes/3045596" class="btn">Inscreva-se no GT</a>
+                    </div>
+                </div>
+                
+                <div class="gt-card">
+                    <div class="gt-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <div class="gt-content">
+                        <h3>Saúde, Estética e Bem-estar</h3>
+                        <p>Debates sobre a ampliação de serviços privados de saúde, clínicas, centros de estética, academias e ações voltadas à saúde preventiva e bem-estar da população.</p>
+                        <div class="gt-info"><strong>Data:</strong> 07/10/2025<br><strong>Local:</strong> Auditório Edson Teixeira<br><strong>Horário:</strong> 19h</div>
+                        <a href="https://www.sympla.com.br/evento/grupo-de-trabalho-saude-estetica-e-bem-estar/3045603" class="btn">Inscreva-se no GT</a>
+                    </div>
+                </div>
+                
+                <div class="gt-card">
+                    <div class="gt-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="gt-content">
+                        <h3>Educação e Formação Profissional</h3>
+                        <p>Fortalecimento da educação técnica e profissional, formação de mão de obra qualificada, integração com o mercado de trabalho e valorização da juventude.</p>
+                        <div class="gt-info"><strong>Data:</strong> 21/08/2025<br><strong>Local:</strong> Auditório Edson Teixeira<br><strong>Horário:</strong> 19h</div>
+                        <a href="https://www.sympla.com.br/evento/grupo-de-trabalho-educacao-e-formacao-profissional/3045612" class="btn">Inscreva-se no GT</a>
+                    </div>
+                </div>
+                
+                <div class="gt-card">
+                    <div class="gt-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <div class="gt-content">
+                        <h3>Indústria e Produção Local</h3>
+                        <p>Diagnóstico e propostas para impulsionar a indústria local, facilitar o ambiente de produção e estimular a geração de empregos formais.</p>
+                        <div class="gt-info"><strong>Data:</strong> 18/09/2025<br><strong>Local:</strong> Auditório Edson Teixeira<br><strong>Horário:</strong> 19h</div>
+                        <a href="https://www.sympla.com.br/evento/grupo-de-trabalho-industria-e-producao-local/3045616" class="btn">Inscreva-se no GT</a>
+                    </div>
+                </div>
+                
+                <div class="gt-card">
+                    <div class="gt-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="gt-content">
+                        <h3>Inovação e Startups</h3>
+                        <p>Criação de um ecossistema de inovação, empreendedorismo digital, acesso a tecnologias, incubação de ideias e estímulo à nova economia.</p>
+                        <div class="gt-info"><strong>Data:</strong> 14/10/2025<br><strong>Local:</strong> Auditório Edson Teixeira<br><strong>Horário:</strong> 19h</div>
+                        <a href="https://www.sympla.com.br/evento/grupo-de-trabalho-inovacao-e-startups/3045625" class="btn">Inscreva-se no GT</a>
+                    </div>
+                </div>
+                
+                <div class="gt-card">
+                    <div class="gt-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <div class="gt-content">
+                        <h3>Logística e Infraestrutura</h3>
+                        <p>Discussão sobre transporte urbano e intermunicipal, mobilidade, acessos viários, energia, conectividade e apoio à expansão comercial e produtiva.</p>
+                        <div class="gt-info"><strong>Data:</strong> 04/11/2025<br><strong>Local:</strong> Auditório Edson Teixeira<br><strong>Horário:</strong> 19h</div>
+                        <a href="https://www.sympla.com.br/evento/grupo-de-trabalho-logistica-e-infraestrutura/3045630" class="btn">Inscreva-se no GT</a>
+                    </div>
+                </div>
+                
+                <div class="gt-card">
+                    <div class="gt-icon">
+                        <i class="fas fa-female"></i>
+                    </div>
+                    <div class="gt-content">
+                        <h3>Empreendedorismo Feminino - SEBRAE DELAS</h3>
+                        <p>Ações para promover a participação de mulheres na economia, apoio à formalização, capacitação e criação de redes de suporte e financiamento.</p>
+                        <div class="gt-info"><strong>Data:</strong> 25/09/2025<br><strong>Local:</strong> Auditório Edson Teixeira<br><strong>Horário:</strong> 19h</div>
+                        <a href="https://www.sympla.com.br/evento/grupo-de-trabalho-empreendedorismo-feminino/3046224" class="btn">Inscreva-se no GT</a>
+                    </div>
+                </div>
+                
+                <div class="gt-card">
+                    <div class="gt-icon">
+                        <i class="fas fa-list"></i>
+                    </div>
+                    <div class="gt-content">
+                        <h3>Apresentação e Conclusão dos Grupos de Trabalho</h3>
+                        <p>Momento de apresentar o que foi discutido em todos os GTs, apresentar as demandas e possíveis soluções, além da apresentação do Plano de Ação inicial para atender os pontos emergenciais discutidos.</p>
+                        <div class="gt-info"><strong>Data:</strong> 04/12/2025<br><strong>Local:</strong> A definir</div>
+                        <a href="#" class="btn">Inscreva-se</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CMDE -->
+    <section class="section cmde-section" id="cmde">
+        <div class="container">
+            <div class="section-title">
+                <h2>Conselho Municipal de Desenvolvimento Econômico (CMDE)</h2>
+            </div>
+            <div class="cmde-flex" style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start;">
+                <div class="cmde-main" style="flex: 2; min-width: 320px;">
+                    <h3 style="color: var(--amarelo); margin-bottom: 18px;">O que é o CMDE?</h3>
+                    <p style="font-size: 1.1rem; margin-bottom: 18px;">O Conselho Municipal de Desenvolvimento Econômico (CMDE) é um órgão colegiado permanente, criado para liderar, propor e acompanhar políticas públicas estratégicas para o desenvolvimento econômico de Paulo Afonso. Composto por representantes do poder público, setor produtivo, academia e sociedade civil, o CMDE garante governança colaborativa, visão de longo prazo e continuidade das ações discutidas no Fórum.</p>
+                    <p style="font-size: 1.1rem; margin-bottom: 18px;">A criação do CMDE marca um novo tempo para a cidade, consolidando um espaço institucional de diálogo, planejamento e ação conjunta para transformar desafios em oportunidades e impulsionar o crescimento sustentável.</p>
+                    <div style="margin: 32px 0; padding: 24px; background: var(--branco); border-radius: 10px; box-shadow: 0 4px 16px rgba(0,0,0,0.07);">
+                        <h3 style="color: var(--azul-primario); margin-bottom: 10px;">Por que o CMDE é essencial para o futuro de Paulo Afonso?</h3>
+                        <ul style="font-size: 1.05rem; margin-left: 18px;">
+                            <li><i class="fas fa-calendar-check" style="color: var(--laranja);"></i> Planejamento contínuo e estratégico para o desenvolvimento local</li>
+                            <li><i class="fas fa-project-diagram" style="color: var(--azul-primario);"></i> Integração entre governo, empresas, academia e sociedade civil</li>
+                            <li><i class="fas fa-bolt" style="color: var(--amarelo);"></i> Agilidade na tomada de decisões e resposta a desafios</li>
+                            <li><i class="fas fa-university" style="color: var(--verde);"></i> Fortalecimento institucional e atração de novos investimentos</li>
+                            <li><i class="fas fa-lightbulb" style="color: var(--laranja);"></i> Ambiente mais favorável à inovação, empreendedorismo e crescimento</li>
+                        </ul>
+                    </div>
+                    <div style="margin: 32px 0; padding: 24px; background: var(--cinza-claro); border-radius: 10px;">
+                        <h3 style="color: var(--azul-secundario); margin-bottom: 10px;">Benefícios Diretos do CMDE</h3>
+                        <ul style="font-size: 1.05rem; margin-left: 18px;">
+                            <li><i class="fas fa-users" style="color: var(--azul-primario);"></i> Participação ativa dos setores produtivos nas decisões estratégicas</li>
+                            <li><i class="fas fa-chart-line" style="color: var(--laranja);"></i> Maior competitividade e geração de empregos</li>
+                            <li><i class="fas fa-handshake" style="color: var(--verde);"></i> Parcerias sólidas e projetos de impacto</li>
+                            <li><i class="fas fa-cogs" style="color: var(--amarelo);"></i> Políticas públicas mais eficientes e alinhadas às necessidades locais</li>
+                            <li><i class="fas fa-seedling" style="color: var(--azul-secundario);"></i> Desenvolvimento sustentável e legado para as próximas gerações</li>
+                        </ul>
+                    </div>
+                    <div style="margin: 32px 0;">
+                        <h3 style="color: var(--laranja); margin-bottom: 10px;">Paulo Afonso só tem a ganhar!</h3>
+                        <p style="font-size: 1.08rem;">O CMDE fortalece a participação dos setores produtivos, acelera o desenvolvimento e garante que a cidade avance de forma planejada, inovadora e inclusiva.</p>
+                    </div>
+                    <div style="margin: 32px 0; text-align: center;">
+                        <span style="display: inline-block; background: var(--azul-primario); color: var(--branco); font-weight: bold; font-size: 1.2rem; padding: 18px 28px; border-radius: 8px; letter-spacing: 1px;">DESENVOLVIMENTO NÃO ACONTECE POR ACASO. ACONTECE QUANDO A CIDADE PENSA JUNTO, DECIDE JUNTO E AGE JUNTO.</span>
+                    </div>
+                    <a href="projeto-lei-cmde.pdf" class="btn" download style="margin-top: 18px;">Visualizar Projeto de Lei</a>
+                </div>
+                <div class="cmde-image" style="flex: 1; min-width: 260px; max-width: 400px; align-self: flex-start;">
+                    <img src="cmde-image.jpg" alt="Conselho Municipal de Desenvolvimento Econômico" style="width: 100%; border-radius: 10px; box-shadow: 0 6px 24px rgba(0,0,0,0.10);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Turismo -->
+    <section class="section" id="turismo">
+        <div class="container">
+            <div class="section-title">
+                <h2>Turismo & Cidade</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Conheça Paulo Afonso</h3>
+                    <p>Paulo Afonso possui diversos atrativos turísticos que serão apresentados durante o Fórum, destacando as oportunidades de visitação para moradores e turistas.</p>
+                    <p>Venha conhecer nossas belezas naturais, culturais e históricas, e descubra como o turismo pode ser um importante vetor de desenvolvimento econômico para nossa região.</p>
+                    <a href="#" class="btn">Agendar City Tour</a>
+                </div>
+                <div class="about-image">
+                    <img src="turismo-pa.jpg" alt="Turismo em Paulo Afonso">
+                </div>
+            </div>
+            
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="cachoeira-pa.jpg" alt="Cachoeira de Paulo Afonso">
+                </div>
+                <div class="gallery-item">
+                    <img src="canyon-pa.jpg" alt="Cânion do São Francisco">
+                </div>
+                <div class="gallery-item">
+                    <img src="centro-pa.jpg" alt="Centro Histórico">
+                </div>
+                <div class="gallery-item">
+                    <img src="artesanato-pa.jpg" alt="Artesanato Local">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inscrição -->
+    <section class="section" id="inscricao">
+        <div class="container">
+            <div class="section-title">
+                <h2>Inscrição</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Participe deste momento histórico</h3>
+                    <p>As inscrições para o 1º Fórum Municipal de Desenvolvimento Econômico de Paulo Afonso são gratuitas e podem ser realizadas através da plataforma Sympla.</p>
+                    <p>Você pode se inscrever para o evento geral e também para os Grupos de Trabalho de seu interesse.</p>
+                    <a href="https://www.sympla.com.br/evento/1-forum-de-desenvolvimento-economico-de-paulo-afonso/3046468" class="btn" target="_blank">Inscreva-se Agora</a>
+                    <p>Para dúvidas sobre inscrições, entre em contato com a SETIC pelo telefone (75) 3199-7414 ou pelo e-mail forum@pmpa.ba.gov.br</p>
+                </div>
+                <div class="about-image">
+                    <img src="inscricao.jpg" alt="Inscrição">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="section" id="contato">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contato</h2>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Secretaria de Turismo, Indústria e Comércio - SETIC</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <p>Av. Getúlio Vargas, 235 - Centro</p>
+                            <p>Paulo Afonso - BA</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <p>(75) 3199-7414</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <p>forum@pmpa.ba.gov.br</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <input type="text" name="name" placeholder="Seu nome" required>
+                        <input type="email" name="email" placeholder="Seu e-mail" required>
+                        <input type="tel" name="phone" placeholder="Seu telefone">
+                        <textarea name="message" placeholder="Sua mensagem" required></textarea>
+                        <button type="submit" class="btn">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.23456789!2d-38.1234567!3d-9.0123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwMDAnNDQuNCJTIDM4wrAwNyczNi4wIlc!4v1234567890123!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <img src="logo-forum-white.png" alt="Logo do Fórum">
+                    <p>1º Fórum Municipal de Desenvolvimento Econômico de Paulo Afonso</p>
+                    <p>"Construindo uma Rede para um Novo Tempo"</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#sobre">Sobre o Fórum</a></li>
+                        <li><a href="#programacao">Programação</a></li>
+                        <li><a href="#gts">Grupos de Trabalho</a></li>
+                        <li><a href="#cmde">CMDE</a></li>
+                        <li><a href="#turismo">Turismo</a></li>
+                        <li><a href="#inscricao">Inscrições</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Realização</h3>
+                    <div class="partners">
+                        <img src="logo-prefeitura.png" alt="Prefeitura de Paulo Afonso" class="partner-logo">
+                        <img src="logo-setic.png" alt="SETIC" class="partner-logo">
+                    </div>
+                    
+                    <h3 style="margin-top: 20px;">Parceiros</h3>
+                    <div class="partners">
+                        <img src="logo-unirios.png" alt="UniRios" class="partner-logo">
+                        <img src="logo-sebrae.png" alt="Sebrae" class="partner-logo">
+                        <img src="logo-fieb.png" alt="FIEB" class="partner-logo">
+                        <img src="logo-sicoob.png" alt="SICOOB" class="partner-logo">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 1º Fórum Municipal de Desenvolvimento Econômico de Paulo Afonso. Todos os direitos reservados.</p>
+                <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão flutuante do WhatsApp -->
+    <a href="https://wa.me/557531997414?text=Quero%20informa%C3%A7%C3%B5es%20sobre%20o%20forum" class="whatsapp-float" target="_blank" rel="noopener" title="Fale conosco pelo WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Contagem regressiva
+        function updateCountdown() {
+            const eventDate = new Date('August 5, 2025 09:00:00').getTime();
+            const now = new Date().getTime();
+            const distance = eventDate - now;
+            
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            document.getElementById('days').innerHTML = days.toString().padStart(2, '0');
+            document.getElementById('hours').innerHTML = hours.toString().padStart(2, '0');
+            document.getElementById('minutes').innerHTML = minutes.toString().padStart(2, '0');
+            document.getElementById('seconds').innerHTML = seconds.toString().padStart(2, '0');
+        }
+        
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+        
+        // Tabs da programação
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+        
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const tabId = btn.getAttribute('data-tab');
+                
+                tabBtns.forEach(b => b.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+                
+                btn.classList.add('active');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+        
+        // Menu mobile
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        // Fechar menu ao clicar em um link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    navLinks.classList.remove('active');
+                }
+            });
+        });
+        
+        // Suavizar rolagem para âncoras
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
